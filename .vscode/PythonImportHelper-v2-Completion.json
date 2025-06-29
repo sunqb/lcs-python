@@ -1,0 +1,362 @@
+[
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "turtle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle",
+        "description": "turtle",
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "今天",
+        "kind": 5,
+        "importPath": "courses.lesson10_files.simple_diary",
+        "description": "courses.lesson10_files.simple_diary",
+        "peekOfCode": "今天 = datetime.date.today()\n心情 = input(\"今天心情如何？\")\n# 决策理由：使用 'a' 模式来追加内容，而不是 'w' 覆盖，这样可以保留历史日记。\nwith open(\"日记.txt\", \"a\", encoding=\"utf-8\") as 日记:\n    日记.write(f\"{今天}: {心情}\\n\")\nprint(\"日记已保存！\")",
+        "detail": "courses.lesson10_files.simple_diary",
+        "documentation": {}
+    },
+    {
+        "label": "心情",
+        "kind": 5,
+        "importPath": "courses.lesson10_files.simple_diary",
+        "description": "courses.lesson10_files.simple_diary",
+        "peekOfCode": "心情 = input(\"今天心情如何？\")\n# 决策理由：使用 'a' 模式来追加内容，而不是 'w' 覆盖，这样可以保留历史日记。\nwith open(\"日记.txt\", \"a\", encoding=\"utf-8\") as 日记:\n    日记.write(f\"{今天}: {心情}\\n\")\nprint(\"日记已保存！\")",
+        "detail": "courses.lesson10_files.simple_diary",
+        "documentation": {}
+    },
+    {
+        "label": "画笔",
+        "kind": 5,
+        "importPath": "courses.lesson11_turtle.rainbow_flower",
+        "description": "courses.lesson11_turtle.rainbow_flower",
+        "peekOfCode": "画笔 = turtle.Turtle()\n画笔.speed(10)  # 设置速度\n颜色列表 = [\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"purple\"]\n# 决策理由：使用循环和颜色列表，让孩子直观地看到代码如何创造出多彩的图案，激发兴趣。\nfor 颜色 in 颜色列表:\n    画笔.color(颜色)\n    画笔.circle(50)  # 画圆\n    画笔.right(60)   # 旋转\n画笔.hideturtle() # 隐藏画笔\nturtle.done()  # 保持窗口打开",
+        "detail": "courses.lesson11_turtle.rainbow_flower",
+        "documentation": {}
+    },
+    {
+        "label": "颜色列表",
+        "kind": 5,
+        "importPath": "courses.lesson11_turtle.rainbow_flower",
+        "description": "courses.lesson11_turtle.rainbow_flower",
+        "peekOfCode": "颜色列表 = [\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"purple\"]\n# 决策理由：使用循环和颜色列表，让孩子直观地看到代码如何创造出多彩的图案，激发兴趣。\nfor 颜色 in 颜色列表:\n    画笔.color(颜色)\n    画笔.circle(50)  # 画圆\n    画笔.right(60)   # 旋转\n画笔.hideturtle() # 隐藏画笔\nturtle.done()  # 保持窗口打开",
+        "detail": "courses.lesson11_turtle.rainbow_flower",
+        "documentation": {}
+    },
+    {
+        "label": "神秘数字",
+        "kind": 5,
+        "importPath": "courses.lesson12_project.guess_game",
+        "description": "courses.lesson12_project.guess_game",
+        "peekOfCode": "神秘数字 = random.randint(1, 10)\n猜测次数 = 0\n最大次数 = 3\nwhile 猜测次数 < 最大次数:\n    try:\n        玩家猜测 = int(input(f\"第{猜测次数 + 1}次猜测，请输入数字：\"))\n        猜测次数 += 1\n        if 玩家猜测 == 神秘数字:\n            print(\"🎉 恭喜你猜对了！\")\n            break",
+        "detail": "courses.lesson12_project.guess_game",
+        "documentation": {}
+    },
+    {
+        "label": "猜测次数",
+        "kind": 5,
+        "importPath": "courses.lesson12_project.guess_game",
+        "description": "courses.lesson12_project.guess_game",
+        "peekOfCode": "猜测次数 = 0\n最大次数 = 3\nwhile 猜测次数 < 最大次数:\n    try:\n        玩家猜测 = int(input(f\"第{猜测次数 + 1}次猜测，请输入数字：\"))\n        猜测次数 += 1\n        if 玩家猜测 == 神秘数字:\n            print(\"🎉 恭喜你猜对了！\")\n            break\n        elif 玩家猜测 > 神秘数字:",
+        "detail": "courses.lesson12_project.guess_game",
+        "documentation": {}
+    },
+    {
+        "label": "最大次数",
+        "kind": 5,
+        "importPath": "courses.lesson12_project.guess_game",
+        "description": "courses.lesson12_project.guess_game",
+        "peekOfCode": "最大次数 = 3\nwhile 猜测次数 < 最大次数:\n    try:\n        玩家猜测 = int(input(f\"第{猜测次数 + 1}次猜测，请输入数字：\"))\n        猜测次数 += 1\n        if 玩家猜测 == 神秘数字:\n            print(\"🎉 恭喜你猜对了！\")\n            break\n        elif 玩家猜测 > 神秘数字:\n            print(\"太大了！\")",
+        "detail": "courses.lesson12_project.guess_game",
+        "documentation": {}
+    },
+    {
+        "label": "print_slow",
+        "kind": 2,
+        "importPath": "courses.lesson13_text_adventure.adventure_game",
+        "description": "courses.lesson13_text_adventure.adventure_game",
+        "peekOfCode": "def print_slow(text):\n    \"\"\"一个让文字慢慢打印的函数，增加神秘感\"\"\"\n    for char in text:\n        print(char, end='', flush=True)\n        time.sleep(0.05)\n    print()\ndef show_intro():\n    \"\"\"显示游戏介绍\"\"\"\n    print_slow(\"你在一座古老的城堡里醒来，头有点晕...\")\n    print_slow(\"你发现大门被锁住了，必须找到钥匙才能离开。\")",
+        "detail": "courses.lesson13_text_adventure.adventure_game",
+        "documentation": {}
+    },
+    {
+        "label": "show_intro",
+        "kind": 2,
+        "importPath": "courses.lesson13_text_adventure.adventure_game",
+        "description": "courses.lesson13_text_adventure.adventure_game",
+        "peekOfCode": "def show_intro():\n    \"\"\"显示游戏介绍\"\"\"\n    print_slow(\"你在一座古老的城堡里醒来，头有点晕...\")\n    print_slow(\"你发现大门被锁住了，必须找到钥匙才能离开。\")\n    print_slow(\"祝你好运，冒险家！\")\n    print(\"-\" * 30)\ndef play_game():\n    \"\"\"游戏主函数\"\"\"\n    current_room = \"大厅\"\n    has_key = False",
+        "detail": "courses.lesson13_text_adventure.adventure_game",
+        "documentation": {}
+    },
+    {
+        "label": "play_game",
+        "kind": 2,
+        "importPath": "courses.lesson13_text_adventure.adventure_game",
+        "description": "courses.lesson13_text_adventure.adventure_game",
+        "peekOfCode": "def play_game():\n    \"\"\"游戏主函数\"\"\"\n    current_room = \"大厅\"\n    has_key = False\n    show_intro()\n    while True:\n        print_slow(f\"\\n你现在在【{current_room}】。\")\n        if current_room == \"大厅\":\n            print_slow(\"你看到一个通往“书房”的门，还有一个紧锁的“宝箱室”。\")\n            print_slow(\"桌上有一张纸条。\")",
+        "detail": "courses.lesson13_text_adventure.adventure_game",
+        "documentation": {}
+    },
+    {
+        "label": "draw_blade",
+        "kind": 2,
+        "importPath": "courses.lesson14_advanced_turtle.animated_windmill",
+        "description": "courses.lesson14_advanced_turtle.animated_windmill",
+        "peekOfCode": "def draw_blade(color):\n    \"\"\"画一个风车叶片\"\"\"\n    pen.color(color)\n    pen.begin_fill()\n    pen.forward(100)\n    pen.left(90)\n    pen.forward(20)\n    pen.left(90)\n    pen.forward(100)\n    pen.end_fill()",
+        "detail": "courses.lesson14_advanced_turtle.animated_windmill",
+        "documentation": {}
+    },
+    {
+        "label": "draw_windmill",
+        "kind": 2,
+        "importPath": "courses.lesson14_advanced_turtle.animated_windmill",
+        "description": "courses.lesson14_advanced_turtle.animated_windmill",
+        "peekOfCode": "def draw_windmill(angle):\n    \"\"\"画整个风车\"\"\"\n    pen.penup()\n    pen.goto(0, 0)\n    pen.setheading(angle)\n    pen.pendown()\n    # 画四个叶片\n    draw_blade(\"red\")\n    pen.setheading(angle + 90)\n    draw_blade(\"blue\")",
+        "detail": "courses.lesson14_advanced_turtle.animated_windmill",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "courses.lesson14_advanced_turtle.animated_windmill",
+        "description": "courses.lesson14_advanced_turtle.animated_windmill",
+        "peekOfCode": "screen = turtle.Screen()\nscreen.title(\"旋转的风车\")\nscreen.bgcolor(\"skyblue\")\n# 创建画笔\npen = turtle.Turtle()\npen.speed(0)\npen.width(2)\ndef draw_blade(color):\n    \"\"\"画一个风车叶片\"\"\"\n    pen.color(color)",
+        "detail": "courses.lesson14_advanced_turtle.animated_windmill",
+        "documentation": {}
+    },
+    {
+        "label": "pen",
+        "kind": 5,
+        "importPath": "courses.lesson14_advanced_turtle.animated_windmill",
+        "description": "courses.lesson14_advanced_turtle.animated_windmill",
+        "peekOfCode": "pen = turtle.Turtle()\npen.speed(0)\npen.width(2)\ndef draw_blade(color):\n    \"\"\"画一个风车叶片\"\"\"\n    pen.color(color)\n    pen.begin_fill()\n    pen.forward(100)\n    pen.left(90)\n    pen.forward(20)",
+        "detail": "courses.lesson14_advanced_turtle.animated_windmill",
+        "documentation": {}
+    },
+    {
+        "label": "rotation_angle",
+        "kind": 5,
+        "importPath": "courses.lesson14_advanced_turtle.animated_windmill",
+        "description": "courses.lesson14_advanced_turtle.animated_windmill",
+        "peekOfCode": "rotation_angle = 0\nwhile True:\n    pen.clear()  # 清除上一帧\n    draw_windmill(rotation_angle) # 画新的一帧\n    screen.update()  # 更新画布\n    rotation_angle += 5  # 增加旋转角度\n    time.sleep(0.05)  # 短暂延迟，控制动画速度\nturtle.done()",
+        "detail": "courses.lesson14_advanced_turtle.animated_windmill",
+        "documentation": {}
+    },
+    {
+        "label": "questions",
+        "kind": 5,
+        "importPath": "courses.lesson15_fun_quiz_game.quiz_game",
+        "description": "courses.lesson15_fun_quiz_game.quiz_game",
+        "peekOfCode": "questions = {\n    \"中国的首都是哪里？\": \"北京\",\n    \"世界上最大的动物是什么？\": \"蓝鲸\",\n    \"一年有多少天？\": \"365\"\n}\n# 游戏开始\nprint(\"欢迎来到问答游戏！\")\nscore = 0\n# 随机提问\nfor question in random.sample(list(questions.keys()), len(questions)):",
+        "detail": "courses.lesson15_fun_quiz_game.quiz_game",
+        "documentation": {}
+    },
+    {
+        "label": "score",
+        "kind": 5,
+        "importPath": "courses.lesson15_fun_quiz_game.quiz_game",
+        "description": "courses.lesson15_fun_quiz_game.quiz_game",
+        "peekOfCode": "score = 0\n# 随机提问\nfor question in random.sample(list(questions.keys()), len(questions)):\n    answer = input(question + \" \")\n    if answer == questions[question]:\n        print(\"回答正确！\")\n        score += 1\n    else:\n        print(\"回答错误！正确答案是：\" + questions[question])\n# 游戏结束",
+        "detail": "courses.lesson15_fun_quiz_game.quiz_game",
+        "documentation": {}
+    },
+    {
+        "label": "苹果数量",
+        "kind": 5,
+        "importPath": "courses.lesson2_numbers.apple_cost",
+        "description": "courses.lesson2_numbers.apple_cost",
+        "peekOfCode": "苹果数量 = 3\n每个苹果价格 = 2\n总价 = 苹果数量 * 每个苹果价格\nprint(\"总共需要\", 总价, \"元\")",
+        "detail": "courses.lesson2_numbers.apple_cost",
+        "documentation": {}
+    },
+    {
+        "label": "每个苹果价格",
+        "kind": 5,
+        "importPath": "courses.lesson2_numbers.apple_cost",
+        "description": "courses.lesson2_numbers.apple_cost",
+        "peekOfCode": "每个苹果价格 = 2\n总价 = 苹果数量 * 每个苹果价格\nprint(\"总共需要\", 总价, \"元\")",
+        "detail": "courses.lesson2_numbers.apple_cost",
+        "documentation": {}
+    },
+    {
+        "label": "总价",
+        "kind": 5,
+        "importPath": "courses.lesson2_numbers.apple_cost",
+        "description": "courses.lesson2_numbers.apple_cost",
+        "peekOfCode": "总价 = 苹果数量 * 每个苹果价格\nprint(\"总共需要\", 总价, \"元\")",
+        "detail": "courses.lesson2_numbers.apple_cost",
+        "documentation": {}
+    },
+    {
+        "label": "玩具数量",
+        "kind": 5,
+        "importPath": "courses.lesson3_variables.toy_cost",
+        "description": "courses.lesson3_variables.toy_cost",
+        "peekOfCode": "玩具数量 = 2\n每个玩具价格 = 5\n总价 = 玩具数量 * 每个玩具价格\nprint(\"我买了\", 玩具数量, \"个玩具，每个\", 每个玩具价格, \"元，总共花了\", 总价, \"元。\")",
+        "detail": "courses.lesson3_variables.toy_cost",
+        "documentation": {}
+    },
+    {
+        "label": "每个玩具价格",
+        "kind": 5,
+        "importPath": "courses.lesson3_variables.toy_cost",
+        "description": "courses.lesson3_variables.toy_cost",
+        "peekOfCode": "每个玩具价格 = 5\n总价 = 玩具数量 * 每个玩具价格\nprint(\"我买了\", 玩具数量, \"个玩具，每个\", 每个玩具价格, \"元，总共花了\", 总价, \"元。\")",
+        "detail": "courses.lesson3_variables.toy_cost",
+        "documentation": {}
+    },
+    {
+        "label": "总价",
+        "kind": 5,
+        "importPath": "courses.lesson3_variables.toy_cost",
+        "description": "courses.lesson3_variables.toy_cost",
+        "peekOfCode": "总价 = 玩具数量 * 每个玩具价格\nprint(\"我买了\", 玩具数量, \"个玩具，每个\", 每个玩具价格, \"元，总共花了\", 总价, \"元。\")",
+        "detail": "courses.lesson3_variables.toy_cost",
+        "documentation": {}
+    },
+    {
+        "label": "姓名",
+        "kind": 5,
+        "importPath": "courses.lesson4_strings.my_card",
+        "description": "courses.lesson4_strings.my_card",
+        "peekOfCode": "姓名 = \"小明\"  # 改成你的名字\n年龄 = 8      # 改成你的年龄\n爱好 = \"画画\"  # 改成你的爱好\n# 制作介绍卡片\nprint(\"=\" * 20)  # 打印20个等号作为边框\nprint(\"   个人介绍卡片\")\nprint(\"=\" * 20)\nprint(\"姓名：\" + 姓名)\nprint(\"年龄：\" + str(年龄) + \"岁\")  # str()把数字变成文字\nprint(\"爱好：\" + 爱好)",
+        "detail": "courses.lesson4_strings.my_card",
+        "documentation": {}
+    },
+    {
+        "label": "年龄",
+        "kind": 5,
+        "importPath": "courses.lesson4_strings.my_card",
+        "description": "courses.lesson4_strings.my_card",
+        "peekOfCode": "年龄 = 8      # 改成你的年龄\n爱好 = \"画画\"  # 改成你的爱好\n# 制作介绍卡片\nprint(\"=\" * 20)  # 打印20个等号作为边框\nprint(\"   个人介绍卡片\")\nprint(\"=\" * 20)\nprint(\"姓名：\" + 姓名)\nprint(\"年龄：\" + str(年龄) + \"岁\")  # str()把数字变成文字\nprint(\"爱好：\" + 爱好)\nprint(\"=\" * 20)",
+        "detail": "courses.lesson4_strings.my_card",
+        "documentation": {}
+    },
+    {
+        "label": "爱好",
+        "kind": 5,
+        "importPath": "courses.lesson4_strings.my_card",
+        "description": "courses.lesson4_strings.my_card",
+        "peekOfCode": "爱好 = \"画画\"  # 改成你的爱好\n# 制作介绍卡片\nprint(\"=\" * 20)  # 打印20个等号作为边框\nprint(\"   个人介绍卡片\")\nprint(\"=\" * 20)\nprint(\"姓名：\" + 姓名)\nprint(\"年龄：\" + str(年龄) + \"岁\")  # str()把数字变成文字\nprint(\"爱好：\" + 爱好)\nprint(\"=\" * 20)",
+        "detail": "courses.lesson4_strings.my_card",
+        "documentation": {}
+    },
+    {
+        "label": "体温",
+        "kind": 5,
+        "importPath": "courses.lesson5_conditions.little_doctor",
+        "description": "courses.lesson5_conditions.little_doctor",
+        "peekOfCode": "体温 = 36.5  # 改成不同的温度试试\nprint(\"=== 小小医生程序 ===\")\nprint(\"你的体温是：\", 体温, \"度\")\nif 体温 > 37.5:\n    print(\"你发烧了！要多喝水，好好休息。\")\nelif 体温 < 36:\n    print(\"体温有点低，要注意保暖哦。\")\nelse:\n    print(\"体温正常，身体很健康！\")\n# 检查身高",
+        "detail": "courses.lesson5_conditions.little_doctor",
+        "documentation": {}
+    },
+    {
+        "label": "身高",
+        "kind": 5,
+        "importPath": "courses.lesson5_conditions.little_doctor",
+        "description": "courses.lesson5_conditions.little_doctor",
+        "peekOfCode": "身高 = 120  # 厘米，改成你的身高\nprint(\"\\n你的身高是：\", 身高, \"厘米\")\nif 身高 > 130:\n    print(\"你长得真高！\")\nelif 身高 > 110:\n    print(\"身高刚好！\")\nelse:\n    print(\"还会继续长高的！\")",
+        "detail": "courses.lesson5_conditions.little_doctor",
+        "documentation": {}
+    },
+    {
+        "label": "购物清单",
+        "kind": 5,
+        "importPath": "courses.lesson7_lists.shopping_list",
+        "description": "courses.lesson7_lists.shopping_list",
+        "peekOfCode": "购物清单 = []\n购物清单.append(\"牛奶\")\n购物清单.append(\"面包\")\n购物清单.append(\"鸡蛋\")\nprint(\"=== 我的购物清单 ===\")\nfor i, 商品 in enumerate(购物清单, 1):\n    print(f\"{i}. {商品}\")",
+        "detail": "courses.lesson7_lists.shopping_list",
+        "documentation": {}
+    },
+    {
+        "label": "加法",
+        "kind": 2,
+        "importPath": "courses.lesson8_functions.calculator_functions",
+        "description": "courses.lesson8_functions.calculator_functions",
+        "peekOfCode": "def 加法(a, b):\n    return a + b\ndef 乘法(a, b):\n    return a * b\n结果1 = 加法(3, 5)\n结果2 = 乘法(4, 6)\nprint(\"3 + 5 =\", 结果1)\nprint(\"4 × 6 =\", 结果2)",
+        "detail": "courses.lesson8_functions.calculator_functions",
+        "documentation": {}
+    },
+    {
+        "label": "乘法",
+        "kind": 2,
+        "importPath": "courses.lesson8_functions.calculator_functions",
+        "description": "courses.lesson8_functions.calculator_functions",
+        "peekOfCode": "def 乘法(a, b):\n    return a * b\n结果1 = 加法(3, 5)\n结果2 = 乘法(4, 6)\nprint(\"3 + 5 =\", 结果1)\nprint(\"4 × 6 =\", 结果2)",
+        "detail": "courses.lesson8_functions.calculator_functions",
+        "documentation": {}
+    },
+    {
+        "label": "结果1",
+        "kind": 5,
+        "importPath": "courses.lesson8_functions.calculator_functions",
+        "description": "courses.lesson8_functions.calculator_functions",
+        "peekOfCode": "结果1 = 加法(3, 5)\n结果2 = 乘法(4, 6)\nprint(\"3 + 5 =\", 结果1)\nprint(\"4 × 6 =\", 结果2)",
+        "detail": "courses.lesson8_functions.calculator_functions",
+        "documentation": {}
+    },
+    {
+        "label": "结果2",
+        "kind": 5,
+        "importPath": "courses.lesson8_functions.calculator_functions",
+        "description": "courses.lesson8_functions.calculator_functions",
+        "peekOfCode": "结果2 = 乘法(4, 6)\nprint(\"3 + 5 =\", 结果1)\nprint(\"4 × 6 =\", 结果2)",
+        "detail": "courses.lesson8_functions.calculator_functions",
+        "documentation": {}
+    },
+    {
+        "label": "数字1",
+        "kind": 5,
+        "importPath": "courses.lesson9_input.interactive_calculator",
+        "description": "courses.lesson9_input.interactive_calculator",
+        "peekOfCode": "数字1 = int(input(\"请输入第一个数字：\"))\n数字2 = int(input(\"请输入第二个数字：\"))\n加法结果 = 数字1 + 数字2\nprint(数字1, \"+\", 数字2, \"=\", 加法结果)",
+        "detail": "courses.lesson9_input.interactive_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "数字2",
+        "kind": 5,
+        "importPath": "courses.lesson9_input.interactive_calculator",
+        "description": "courses.lesson9_input.interactive_calculator",
+        "peekOfCode": "数字2 = int(input(\"请输入第二个数字：\"))\n加法结果 = 数字1 + 数字2\nprint(数字1, \"+\", 数字2, \"=\", 加法结果)",
+        "detail": "courses.lesson9_input.interactive_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "加法结果",
+        "kind": 5,
+        "importPath": "courses.lesson9_input.interactive_calculator",
+        "description": "courses.lesson9_input.interactive_calculator",
+        "peekOfCode": "加法结果 = 数字1 + 数字2\nprint(数字1, \"+\", 数字2, \"=\", 加法结果)",
+        "detail": "courses.lesson9_input.interactive_calculator",
+        "documentation": {}
+    }
+]
